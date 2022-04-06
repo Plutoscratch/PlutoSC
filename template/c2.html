@@ -1,0 +1,5 @@
+<span>
+    <v-textarea :id="reply?'c-'+reply:'comment'" filled label="评论" auto-grow value="" maxlength="500" counter>
+    </v-textarea>
+    <v-btn color="accent" class="pa-2 mx-auto" v-on:click="comment.send(reply)"   block>发送</v-btn>
+</span>
